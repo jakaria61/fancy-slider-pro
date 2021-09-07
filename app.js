@@ -73,6 +73,7 @@ const createSlider = () => {
     imagesArea.style.display = 'none';
     const duration = document.getElementById('duration').value || 1000;
     homeBtn.style.display = 'block';
+    // duration validation
     if (duration < 0) {
         alert('please give positive value for slider');
         return;
@@ -122,7 +123,7 @@ searchBtn.addEventListener('click', function () {
     document.querySelector('.main').style.display = 'none';
     clearInterval(timer);
     const search = document.getElementById('search');
-
+    // error showing 
     if (search.value == '') {
         document.getElementById('error').innerHTML = `<h5 class='text-center text-danger'>Please enter something</h5>`;
         return;
