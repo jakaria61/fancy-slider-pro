@@ -123,12 +123,14 @@ searchBtn.addEventListener('click', function () {
     document.querySelector('.main').style.display = 'none';
     clearInterval(timer);
     const search = document.getElementById('search');
+    const searchText = search.value;
+    search.value = '';
     // error showing 
-    if (search.value == '') {
+    if (searchText == '') {
         document.getElementById('error').innerHTML = `<h5 class='text-center text-danger'>Please enter something</h5>`;
         return;
     }
-    getImages(search.value)
+    getImages(searchText)
     document.getElementById('error').innerHTML = '';
     sliders.length = 0;
 })
