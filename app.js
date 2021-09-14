@@ -1,15 +1,4 @@
 
-// working for enter 
-const searchItem = document.getElementById('search');
-const searchButton = document.getElementById('search-btn');
-
-searchItem.addEventListener('keypress', function (event) {
-    if ((event.key) === 'Enter') {
-        searchButton.click();
-    }
-});
-
-//-----------------
 
 const homeBtn = document.getElementById('home-button');
 const imagesArea = document.querySelector('.images');
@@ -19,6 +8,23 @@ const searchBtn = document.getElementById('search-btn');
 const sliderBtn = document.getElementById('create-slider');
 const sliderContainer = document.getElementById('sliders');
 
+// working for enter 
+const searchItem = document.getElementById('search');
+const searchButton = document.getElementById('search-btn');
+
+searchItem.addEventListener('keypress', function (event) {
+    if ((event.key) === 'Enter') {
+        searchButton.click();
+    }
+});
+// create slider enter here 
+const durationInput = document.getElementById('duration');
+durationInput.addEventListener('keypress', function (event) {
+    if ((event.key) === 'Enter') {
+        sliderBtn.click();
+    }
+})
+//-----------------
 
 
 // selected image 
