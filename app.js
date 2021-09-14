@@ -1,11 +1,24 @@
+
+// working for enter 
+const searchItem = document.getElementById('search');
+const searchButton = document.getElementById('search-btn');
+
+searchItem.addEventListener('keypress', function (event) {
+    if ((event.key) === 'Enter') {
+        searchButton.click();
+    }
+});
+
+//-----------------
+
 const homeBtn = document.getElementById('home-button');
-homeBtn.style.display = 'none';
 const imagesArea = document.querySelector('.images');
 const gallery = document.querySelector('.gallery');
 const galleryHeader = document.querySelector('.gallery-header');
 const searchBtn = document.getElementById('search-btn');
 const sliderBtn = document.getElementById('create-slider');
 const sliderContainer = document.getElementById('sliders');
+
 
 
 // selected image 

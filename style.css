@@ -2,7 +2,9 @@ body{
     background-color: rgba(236, 167, 233, 0.507);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
+#home-button{
+ display: none;
+}
 #sliders {
     height: 400px;
     width: 60%;
